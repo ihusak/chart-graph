@@ -30,7 +30,6 @@ const makeGradient = (colorHex: string, ref: ElementRef): CanvasGradient => {
     for (let i = 1; i >= 0; i -= 0.5) {
       changedColor.splice(changedColor.length - 1, 1).push(`${i})`);
       changedColor.push(`${1.2 - i})`);
-      console.log(changedColor, i);
       gradient.addColorStop(i, changedColor.join(','));
     }
 
