@@ -11,6 +11,7 @@ class ChartService {
   public getCoins(ids: string, period: string): Observable<CoinInterface[]> {
       return this.http.get(`https://api.coinranking.com/v1/public/coins?ids=${ids}&period=${period}`)
       .pipe(map((item) => {
+        console.log('item!!!', item);
         const data = item['data'].coins;
         return data.map(itemCoin => ({
           color: itemCoin.color,
