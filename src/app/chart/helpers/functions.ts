@@ -43,7 +43,7 @@ const makeGradient = (colorHex: string, ref: ElementRef): CanvasGradient => {
  */
 const generateTimeStamp = (count): string[] => {
   const result = [];
-  for (let i = count; i >= 0; i -= 1) {
+  for (let i = count - 1; i >= 0; i -= 1) {
     result.push(moment().subtract(i, 'd').format('MMM DD'));
   }
   return result;

@@ -5,7 +5,7 @@ import { CoinInterface } from '../interfaces/coin.interface';
 import { makeGradient, generateTimeStamp, getOptions } from './helpers/functions';
 
 // default variables
-const DEFAULT_IDS: string = '7,10'; // example 2,4,10
+const DEFAULT_IDS: string = '7,10'; // example 2,4,10 || 2,4,24
 const DEFAULT_PERIOD: string = '30d';
 
 @Component({
